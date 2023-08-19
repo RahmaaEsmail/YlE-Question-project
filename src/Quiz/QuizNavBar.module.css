@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.questionProgress {
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.questionProgress p {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.07);
+    padding: 7px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+}
+
+.questionProgress p::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(252, 168, 47, 1);
+    width: 10%;
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.questionProgress span {
+    font-weight: 700;
+}
+
+.progressCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.count {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(77, 44, 94, 1);
+
+}
